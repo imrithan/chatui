@@ -1,31 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Chat UI</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+body {
+  background: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
 
-<body>
+.chat-container {
+  width: 350px;
+  height: 500px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-<div class="chat-container">
-  <div class="chat-header">
-    <b>Chat App</b><br>
-    <span class="status">Online</span>
-  </div>
+.chat-header {
+  background: #075e54;
+  color: white;
+  padding: 12px;
+  border-radius: 10px 10px 0 0;
+}
 
-  <div class="chat-messages">
-    <div class="message received">Hi 👋</div>
-    <div class="message received">Hello!</div>
-    <div class="message received">How are you?</div>
-    <div class="message sent">I'm good 😊</div>
-  </div>
+.status {
+  font-size: 12px;
+  color: #d4f8d4;
+}
 
-  <div class="chat-input">
-    <input type="text" placeholder="Type a message..." disabled>
-    <button disabled>Send</button>
-  </div>
-</div>
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  background: #ece5dd;
+}
 
-</body>
-</html>
+.message {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 10px;
+  max-width: 70%;
+  font-size: 14px;
+}
+
+.received {
+  background: #ffffff;
+}
+
+.sent {
+  background: #dcf8c6;
+  margin-left: auto;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 8px;
+  padding: 8px 15px;
+  border: none;
+  background: #075e54;
+  color: white;
+  border-radius: 20px;
+}
